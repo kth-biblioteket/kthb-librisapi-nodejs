@@ -40,7 +40,7 @@ QMvPRMO6xf4W1+wn8kG/ejLif+acanJeRoDdYkNfw4p9AL1MB/9trvalg+KfX2Mp
           
     } else {
         //APIKEY
-        if(token != process.env.APIKEYREAD){
+        if(token != process.env.APIKEY){
             return res.json({ success: false, message: 'Failed to authenticate token.' });
         } else {
             next();
